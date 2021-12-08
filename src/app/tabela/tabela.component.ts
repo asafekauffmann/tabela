@@ -11,9 +11,7 @@ export class TabelaComponent implements OnChanges {
    @Input() dados: Array<any> = [];
    /* { id: number, paciente: string, recepcao: string } */
    
-   constructor() {
-
-   }
+   constructor() { }
 
    ngOnChanges(changes: SimpleChanges) {
       if(changes.dados) {
