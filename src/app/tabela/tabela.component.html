@@ -1,7 +1,7 @@
 <table>
    <tr *ngFor="let dadosLinha of dados">
-      <td> {{ dadosLinha.id }} </td>
-      <td> {{ dadosLinha.paciente }} </td>
-      <td> {{ dadosLinha.recepcao }} </td>
+      <td *ngFor="let coluna of colunas"> 
+         {{ dadosLinha[coluna] }} 
+      </td>
    </tr>
 </table>
