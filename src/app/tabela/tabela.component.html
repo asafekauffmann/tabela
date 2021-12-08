@@ -1,1 +1,7 @@
-<p>tabela works!</p>
+<table>
+   <tr *ngFor="let dadosLinha of dados">
+      <td> {{ dadosLinha.id }} </td>
+      <td> {{ dadosLinha.paciente }} </td>
+      <td> {{ dadosLinha.recepcao }} </td>
+   </tr>
+</table>
